@@ -1,0 +1,7 @@
+Purpose of this exercise is to observe the fact that handling different inputs (in this case inputs with large/small Hamming weights - no of bits of 1 set in a variable) reflect in the MCU's power consumption. 
+
+For this, we will feed multiple pieces of data - arrays of length 16 - to the MCU, with the property that the first byte of each array is either 0x00 or 0xFF.
+
+We will create two separate lists - one containing the power traces corresponding to inputs starting with 0x00 and the other one to inputs starting with 0xFF. 
+
+After this, we will compute the average of each list (for each trace in each point) and plot the difference between the averages of the lists starting with 1 and with 0. The outcome will be a large spike near the beginning of the plot.
