@@ -1,0 +1,6 @@
+The purpose of this exercise is to demonstrate how to recover a one-byte key, bit by bit, using Hamming weights.
+
+The approach here was to generate each possible 8 bits key, use it to encrypt the input_data, and compare the similarities (number of matching bits, at the same indexes) with the output of the actual encryption. A good "candidate key" is one with as 
+many similarities as possible. 
+
+The final loop will output the most likely key used by the encryption - in this case will be EF.
